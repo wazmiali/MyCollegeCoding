@@ -1,19 +1,18 @@
-<html>
-    <body>
-        <form_action_function.php"POST">
-            <input type="number" name="num1";
-            <input type="number" name="num2";
-            <input type="submit" value=submit";
-            
-</form>
-</body>
-</html>
 <?php
-function add($a,$b)
-{
-    echo$a+$b;
-
+function processMarks($marksarr){
+    $sum = 0;
+    foreach ($marksarr as $value) {
+        $sum += $value;
+    }
+    return $sum;
 }
-add(5,6);
-?>
+$rohan = [34, 98, 45, 12, 98, 93];
+$sumMarks = processMarks($rohan);
 
+$harry = [99, 98, 93, 94, 17, 100];
+$sumMarksharry = processMarks($harry);
+echo "Total marks second by Rohan out of 600 is $sumMarks<br>";
+echo "Total marks second by Harry out of 600 is $sumMarksharry<br>";
+
+
+?>
