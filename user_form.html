@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume with Form</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+        }
+        header h1 {
+            color: #3498db;
+        }
+        header p {
+            color: #777;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #3498db;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }   
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+      
+                    
+        <form action="user_resume.php" method="post">
+            <h2>Contact Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+
+            <h2>Education</h2>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree">
+
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university">
+
+            <label for="gradYear">Graduation Year:</label>
+            <input type="text" id="gradYear" name="gradYear">
+
+            <h2>Experience</h2>
+            <label for="gradYear">Experience Year:</label>
+            <input type="text" id="gradYear" name="experience_year">
+
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="3"></textarea>
+
+            <h2>Hobbies</h2>
+            <label for="hobbies">hobbies:</label>
+            <textarea id="hobbies" name="hobbies" rows="2"></textarea>
+
+            <button type="submit">Generate CV</button>
+        </form>
+    </div>
+
+</body>
+</html>
