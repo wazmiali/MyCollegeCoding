@@ -33,6 +33,7 @@ $is_friend =false;
 echo"<br>";
 echo var_dump($x);
 echo "<br>";
+// echo"<br>";
 echo var_dump($is_friend);
 
 //object instances of class
